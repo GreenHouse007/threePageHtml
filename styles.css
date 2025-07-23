@@ -42,8 +42,8 @@ nav a {
 
 .banner-title {
   position: absolute;
-  top: 20%;
-  left: 25%;
+  top: 30%;
+  left: 30%;
   transform: translate(-50%, -50%);
   background: rgba(30, 30, 30, 0.6);
   padding: 20px 40px;
@@ -245,4 +245,39 @@ form input[type="submit"] {
 textarea {
   resize: vertical;
   min-height: 100px;
+}
+
+@media (max-width: 600px) {
+  .info {
+    width: 90%;
+  }
+
+  .hero-image {
+    width: 100%;
+  }
+
+  .article-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .article-content img {
+    width: 100%;
+    max-width: none;
+  }
+
+  #mayor {
+    width: 100%;
+    height: auto;
+  }
+
+  .buttons {
+    display: block;
+    align-items: center;
+  }
+
+  .buttons button {
+    width: 50%;
+    margin: 10px 0;
+  }
 }
